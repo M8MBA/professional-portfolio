@@ -1,3 +1,256 @@
 * {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 35px; /* size of the header */
+    text-decoration: none;
+    border-bottom: 3px solid black;
+}
+
+header h1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+header nav li {
+    margin: 2px 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 40px 35px;
+    bottom: 0;
+}
+
+.button {
+    border: 3px solid black;
+    color: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 5px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button1:hover {
+    background-color: plum; 
+    color: black
+    ; 
+}
+
+.button2:hover {
+    background-color: plum; 
+    color: black; 
+}
+
+.button3:hover {
+  background-color: plum; 
+  color: black; 
+}
+
+.hero {
+}
+
+.hero-cta {
+    text-align: center;
+    padding: 100px;
+    background-color: plum;
+}
+
+.hero-cta h2 {
+    padding: 2.5%;
+}
+
+.hero-cta img {
+    height: auto;
+    width: 250px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.portfolio {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.portfolio-title {
+    font-size: 32px;
+    border-bottom: 3px solid paleturquoise;
+    margin: 20%;
+}
+
+.section-title {
+    padding: 20px 20px;
+    align-items: center;
+}
+
+/*
+.main-project {
+    display: flex;
+    align-self: center;
+}
+
+.main-project h3 a {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.main-project img {
+    height: auto;
+    width: 700px;
+    border-radius: 25px;
+    border: 3px solid #fce138;
+}
+*/
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.main-image {
+    display: block;
+    width: 100%;
+    height: auto; 
+    border-radius: 25px;
+    border: 3px solid #fce138;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -7px;
+    height: auto;
+    width: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: none;
+    border-radius: 25px;
+    border: 3px solid white;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text a {
+    color: #fce138;
+    font-size: 32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+
+.sub-projects {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 2.5%;
+}
+
+.sub-projects img {
+    height: 200px;
+    width: auto;
+    border-radius: 25px;
+    border: 3px solid plum;
+    margin: 9px;
     display: flex;
 }
+
+.sub-projects h4 {
+    color: orange;
+    position: relative;
+}
+
+.contact-title {
+    border-bottom: 3px solid paleturquoise;
+    margin: 18% 40% 5% 40%;
+}
+
+.section-title-2 {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    background-color: white;
+    background-size: cover;
+    padding: 20px 20px;
+}
+
+.contact ul {
+    background-color: plum;
+    background-size: cover;
+    padding: 5%; /* size of the background */
+    border-bottom: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.contact li a {
+    text-decoration: none;
+}
+
+.button4:hover {
+    background-color: paleturquoise; 
+    color: black
+    ; 
+}
+
+.button5:hover {
+    background-color: paleturquoise; 
+    color: black; 
+}
+
+.button6:hover {
+  background-color: paleturquoise; 
+  color: black; 
+}
+
+
+
+
+
+
+
+  
+  
