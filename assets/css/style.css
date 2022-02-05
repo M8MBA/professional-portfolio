@@ -76,9 +76,6 @@ footer {
   color: black; 
 }
 
-.hero {
-}
-
 .hero-cta {
     text-align: center;
     padding: 100px;
@@ -102,6 +99,12 @@ footer {
     align-items: center;
 }
 
+.sub-portfolio {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
 .portfolio-title {
     font-size: 32px;
     border-bottom: 3px solid paleturquoise;
@@ -113,30 +116,13 @@ footer {
     align-items: center;
 }
 
-/*
-.main-project {
-    display: flex;
-    align-self: center;
-}
-
-.main-project h3 a {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-content: center;
-}
-
-.main-project img {
-    height: auto;
-    width: 700px;
-    border-radius: 25px;
-    border: 3px solid #fce138;
-}
-*/
-
+/* Main Project Overlay */
 .container {
     position: relative;
     width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .main-image {
@@ -158,8 +144,6 @@ footer {
     opacity: 0;
     transition: .5s ease;
     background-color: none;
-    border-radius: 25px;
-    border: 3px solid white;
 }
 
 .container:hover .overlay {
@@ -177,28 +161,45 @@ footer {
     text-decoration: none;
 }
 
-.sub-projects {
-    display: flex;
-    flex-flow: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    padding: 2.5%;
-}
+/* Sub Projects Overlay */
 
-.sub-projects img {
-    height: 200px;
-    width: auto;
+.sub-image {
+    display: block;
+    width: 45%;
+    height: auto; 
     border-radius: 25px;
-    border: 3px solid plum;
-    margin: 9px;
-    display: flex;
+    border: 3px solid #fce138;
+    margin: 10px 0 10px 0;
 }
 
-.sub-projects h4 {
-    color: orange;
-    position: relative;
+.sub-overlay {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    height: auto;
+    width: 160px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: none;
 }
+
+.container:hover .sub-overlay {
+    opacity: 1;
+}
+
+.sub-text a {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+
+/* Sub Projects Overlay */
+
 
 .contact-title {
     border-bottom: 3px solid paleturquoise;
@@ -244,6 +245,37 @@ footer {
 .button6:hover {
   background-color: paleturquoise; 
   color: black; 
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .hero-cta img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500%;
+        height: auto;
+    }
+
+    .sub-image {
+        display: block;
+        width: 90%;
+        height: auto; 
+        border-radius: 25px;
+        border: 3px solid #fce138;
+        margin: 10px 0 10px 0;
+    }
+
+    .contact-title {
+    margin: 18% 20% 5% 20%;
+    }
 }
 
 
