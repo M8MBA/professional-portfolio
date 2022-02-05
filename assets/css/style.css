@@ -61,25 +61,25 @@ footer {
 }
 
 .button1:hover {
-    background-color: plum; 
+    background-color: #ccccff; 
     color: black
     ; 
 }
 
 .button2:hover {
-    background-color: plum; 
+    background-color: #ccccff; 
     color: black; 
 }
 
 .button3:hover {
-  background-color: plum; 
+  background-color: #ccccff; 
   color: black; 
 }
 
 .hero-cta {
     text-align: center;
     padding: 100px;
-    background-color: plum;
+    background-color: #ccccff;
 }
 
 .hero-cta h2 {
@@ -119,10 +119,11 @@ footer {
 /* Main Project Overlay */
 .container {
     position: relative;
-    width: 50%;
+    width: auto;
     justify-content: center;
     align-items: center;
     display: flex;
+    margin: 0 10px 30px 10px;
 }
 
 .main-image {
@@ -216,7 +217,7 @@ footer {
 }
 
 .contact ul {
-    background-color: plum;
+    background-color: #ccccff;
     background-size: cover;
     padding: 5%; /* size of the background */
     border-bottom: 3px solid black;
