@@ -79,7 +79,8 @@ footer {
 .hero-cta {
     text-align: center;
     padding: 100px;
-    background-color: #ccccff;
+    background: rgb(167,172,251);
+    background: linear-gradient(0deg, rgba(167,172,251,1) 0%, rgba(86,45,253,1) 100%);
 }
 
 .hero-cta h2 {
@@ -169,7 +170,7 @@ footer {
     width: 45%;
     height: auto; 
     border-radius: 25px;
-    border: 3px solid #fce138;
+    border: 5px solid ;
     margin: 10px 0 10px 0;
 }
 
@@ -178,7 +179,7 @@ footer {
     top: 10px;
     bottom: 10px;
     height: auto;
-    width: 160px;
+    width: 200px;
     opacity: 0;
     transition: .5s ease;
     background-color: none;
@@ -189,8 +190,9 @@ footer {
 }
 
 .sub-text a {
+    text-align: left;
     color: white;
-    font-size: 20px;
+    font-size: 24px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -217,7 +219,8 @@ footer {
 }
 
 .contact ul {
-    background-color: #ccccff;
+    background: rgb(167,172,251);
+    background: linear-gradient(0deg, rgba(167,172,251,1) 0%, rgba(86,45,253,1) 100%);
     background-size: cover;
     padding: 5%; /* size of the background */
     border-bottom: 3px solid black;
@@ -270,7 +273,7 @@ footer {
         width: 90%;
         height: auto; 
         border-radius: 25px;
-        border: 3px solid #fce138;
+        border: 3px solid #ccccff;
         margin: 10px 0 10px 0;
     }
 
